@@ -1,0 +1,60 @@
+@import "../variables";
+
+.topbar {
+    width: 100vw;
+    height: 50px; 
+    background-color: white;
+    display: flex; 
+    justify-content: space-between;
+    padding: 0 20px; 
+    align-items: center;
+    position: sticky;
+    top: 0; 
+    z-index: 100; 
+    .left {
+        .logo {
+            font-weight: 600;
+            font-size: 32px; 
+            color: $primaryColor;
+            :hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .right {
+        .navIcons {
+            display: flex;
+            justify-content: space-between;
+            width: 150px; 
+            align-items: center;
+            .profileImageContainer {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;  
+                }
+            }
+            .IconContainer {
+                position: relative; 
+                cursor: pointer; 
+                color: $grayTextColor;
+                .badge {
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 15px;
+                    height: 15px;
+                    position: absolute; 
+                    border-radius: 50%;
+                    background-color: red;
+                    color: white; 
+                    top: -7px; 
+                    right: -3px; 
+                    font-size: 10px; 
+                }
+                
+            }
+        }
+    }
+}
+
