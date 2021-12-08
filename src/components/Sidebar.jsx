@@ -58,7 +58,7 @@ const Sidebar = () => {
             </li>
             <li>
               <Feedback className="sidebarIcon"/>
-              Analytics
+              Feedback
             </li>
             <li>
               <ChatBubbleOutline className="sidebarIcon"/>
