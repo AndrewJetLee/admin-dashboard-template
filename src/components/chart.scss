@@ -1,0 +1,10 @@
+@import "../mixins";
+
+.chartContainer {
+    @include widget-box-shadow;
+    margin: 20px; 
+    padding: 20px; 
+    .chartTitle {
+        margin-bottom: 20px;
+    }
+}
