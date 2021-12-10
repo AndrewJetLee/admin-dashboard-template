@@ -5,7 +5,7 @@ const WidgetLg = () => {
     return <button className={"widgetLgButton " + type}>{type}</button>;
   };
 
-  const WidgetLgRow = ({status}) => {
+  const WidgetLgRow = ({ status }) => {
     return (
       <tr className="widgetLgTr">
         <td className="widgetLgUser">
@@ -29,16 +29,18 @@ const WidgetLg = () => {
     <div className="widgetLgContainer">
       <h3 className="widgetLgTitle">Latest Transactions</h3>
       <table className="widgetLgTable">
-        <tr className="widgetLgTr">
-          <th className="widgetLgTh">Customer</th>
-          <th className="widgetLgTh">Date</th>
-          <th className="widgetLgTh">Amount</th>
-          <th className="widgetLgTh">Status</th>
-        </tr>
-        <WidgetLgRow status="Approved"/>
-        <WidgetLgRow status="Declined"/>
-        <WidgetLgRow status="Pending"/>
-        <WidgetLgRow status="Approved"/>
+        <tbody>
+          <tr className="widgetLgTr">
+            <th className="widgetLgTh">Customer</th>
+            <th className="widgetLgTh">Date</th>
+            <th className="widgetLgTh">Amount</th>
+            <th className="widgetLgTh">Status</th>
+          </tr>
+          <WidgetLgRow status="Approved" />
+          <WidgetLgRow status="Declined" />
+          <WidgetLgRow status="Pending" />
+          <WidgetLgRow status="Approved" />
+        </tbody>
       </table>
     </div>
   );
