@@ -48,3 +48,102 @@ export const userData = [
       "Active User": 4490,
     },
   ];
+  
+
+  export const columns = [
+    { field: "id", headerName: "ID", width: 90 },
+    { field: "username", headerName: "Username", width: 200, renderCell: (params) => {
+        return (
+            <div className="userListUser">
+                <img className="userListUserImg" src={params.row.avatar} alt="" />
+                {params.row.username}
+            </div>
+        )
+    } },
+    { field: "email", headerName: "Email", width: 200 },
+    {
+      field: "status",
+      headerName: "Status",
+      width: 120,
+    },
+    {
+      field: "transaction",
+      headerName: "Transaction",
+      width: 160,
+    },
+  ];
+  
+  export const userRows = [
+    {
+      id: 1,
+      username: "Jon Snow",
+      avatar: "http://placekitten.com/g/200/300",
+      email: "jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 2,
+      username: "Jon Snow",
+      avatar: "http://placekitten.com/g/200/300",
+      email: "jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 3,
+      username: "Jon Snow",
+      avatar: "http://placekitten.com/g/200/300",
+      email: "jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 4,
+      username: "Jon Snow",
+      avatar: "http://placekitten.com/g/200/300",
+      email: "jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 5,
+      username: "Jon Snow",
+      avatar: "http://placekitten.com/g/200/300",
+      email: "jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 6,
+      username: "Jon Snow",
+      avatar: "http://placekitten.com/g/200/300",
+      email: "jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 7,
+      username: "Jon Snow",
+      avatar: "http://placekitten.com/g/200/300",
+      email: "jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 8,
+      username: "Jon Snow",
+      avatar: "http://placekitten.com/g/200/300",
+      email: "jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 9,
+      username: "Jon Snow",
+      avatar: "http://placekitten.com/g/200/300",
+      email: "jon@gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+  ];

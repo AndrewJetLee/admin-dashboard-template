@@ -4,10 +4,11 @@ import { Home, TrendingUp, Insights,
          PermIdentity, Storefront, AttachMoney, BarChart,
          MailOutline, Feedback, ChatBubbleOutline,
         WorkOutline, Report
-
         } from "@mui/icons-material/";
+import { useNavigate } from "react-router-dom"
 
 const Sidebar = () => {
+  const navigate = useNavigate();
   return (
     <div className="sidebarContainer">
       <div className="sidebarContent">
@@ -31,11 +32,11 @@ const Sidebar = () => {
         <div className="sidebarMenu">
           <h4 className="sidebarTitle">Quick Menu</h4>
           <ul className="sidebarList">
-            <li>
+            <li onClick={() => {navigate('/users')}}>
               <PermIdentity className="sidebarIcon"/>
               Users
             </li>
-            <li>
+            <li onClick={() => {navigate('/products')}}>
               <Storefront className="sidebarIcon"/>
               Products
             </li>
