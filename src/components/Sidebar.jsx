@@ -15,8 +15,8 @@ const Sidebar = () => {
         <div className="sidebarMenu">
           <h4 className="sidebarTitle">Dashboard</h4>
           <ul className="sidebarList">
-            <li>
-              <Home className="sidebarIcon"/>
+            <li onClick={() => navigate('/')}>
+              <Home className="sidebarIcon" />
               Home
             </li>
             <li>
