@@ -1,0 +1,135 @@
+@import "../../mixins";
+
+.productContainer {
+  flex: 4;
+}
+
+.productTitleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .productTitleCreate {
+    width: 80px;
+    height: 30px; 
+    border: none;
+    padding: 5px;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.productContent {
+  display: grid;
+  grid-template-columns: minmax(500px, 1fr) minmax(400px, 1fr);
+  grid-template-rows: 1fr 1.5fr;
+  padding: 20px;
+  gap: 20px; 
+  .productContentSales {
+    @include widget-box-shadow;
+    grid-column: 1 / 2;
+    padding: 20px;
+    .chartContainer {
+        box-shadow: none; 
+        padding: 0; 
+    }
+  }
+  .productContentInfo {
+    @include widget-box-shadow;
+    grid-column: 2 / 3;
+    padding: 20px;
+    .productContentInfoWrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px; 
+        .productName {
+            font-weight: bold; 
+        }
+    }
+    .productImage {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px; 
+    }
+    .productInfoProperty {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px; 
+        font-size: 14px; 
+        .productInfoKey {
+            font-weight: 500; 
+        }
+    }
+  }
+  .productContentUpdate {
+    @include widget-box-shadow;
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    padding: 20px;
+    display: flex; 
+    justify-content: space-around;
+    .productContentUpdateLeft {
+        display: flex;
+        flex-direction: column;
+
+        .productContentUpdateName {
+            margin: 10px 0; 
+        }
+        .productContentUpdateInput {
+            border: none;
+            border-bottom: solid 1px rgb(185, 185, 185);
+            height: 30px; 
+            font-size: 14px; 
+        }
+        .productContentUpdateDropdown {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px; 
+            label {
+                font-size: 14px;
+                color: rgb(95, 95, 95);
+                font-weight: 500; 
+            }
+            select {
+                margin-top: 10px; 
+                border-color:rgb(156, 156, 156);
+                border-radius: 5px; 
+                height: 30px; 
+            }
+        }
+    }
+
+    .productContentUpdateRight {
+        display: flex;
+        flex-direction: column;
+        .productContentUpdateUpload {
+            display: flex;
+            align-items: center;
+            margin-top: 10px; 
+            margin-bottom: 30px; 
+            .productContentUpdateUploadIcon {
+                    color: darkblue; 
+            }
+            .productContentUpdateUploadImage {
+                width: 100px;
+                height: 100px; 
+                border-radius: 10px; 
+                object-fit: cover;
+                margin-right: 20px; 
+            }
+            
+        }
+        .productContentUpdateButton {
+            height: 30px;    
+            border: none; 
+            background-color: darkblue;
+            color: white; 
+            border-radius: 5px; 
+            
+        }
+    }
+  }
+}
