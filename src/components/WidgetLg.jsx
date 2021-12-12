@@ -14,7 +14,7 @@ const WidgetLg = () => {
             src="http://placekitten.com/200/300"
             alt=""
           />
-          <span className="widgetLgName">Susan Carol</span>
+          <span className="widgetLgName">Junji Chong</span>
         </td>
         <td className="widgetLgDate">2 Jun 2021</td>
         <td className="widgetLgAmount">$122.00</td>
