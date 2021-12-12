@@ -1,3 +1,18 @@
+export const productData = [
+  {
+    name:"Sep",
+    Sales: 100,
+  },
+  {
+    name: "Nov",
+    Sales: 250,
+  },
+  {
+    name: "Dec",
+    Sales: 500,
+  },
+]
+
 export const userData = [
     {
       name: "Jan",
@@ -147,3 +162,64 @@ export const userData = [
       transaction: "$120.00",
     },
   ];
+
+  export const productRows = [
+    {
+      id: 1,
+      product: "Secret Gardens Book",
+      image: "http://placekitten.com/g/200/300",
+      stock: 123,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 2,
+      product: "Secret Gardens Book",
+      image: "http://placekitten.com/g/200/300",
+      stock: 123,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 3,
+      product: "Secret Gardens Book",
+      image: "http://placekitten.com/g/200/300",
+      stock: 123,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 4,
+      product: "Secret Gardens Book",
+      image: "http://placekitten.com/g/200/300",
+      stock: 123,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 5,
+      product: "Secret Gardens Book",
+      image: "http://placekitten.com/g/200/300",
+      stock: 123,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 6,
+      product: "Secret Gardens Book",
+      image: "http://placekitten.com/g/200/300",
+      stock: 123,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 7,
+      product: "Secret Gardens Book",
+      image: "http://placekitten.com/g/200/300",
+      stock: 123,
+      status: "active",
+      price: "$120.00",
+    },
+
+    
+  ]
